@@ -2,6 +2,30 @@
 
 A new Flutter project.
 
+## OpenSpec
+
+В проекте настроен OpenSpec для Codex. Конфигурация и контекст проекта находятся
+в `openspec/config.yaml`, спецификации — в `openspec/specs/`, изменения —
+в `openspec/changes/`, навыки Codex — в `.agents/skills/`.
+
+Установка CLI на другой машине (Node.js 20.19.0 или новее):
+
+```sh
+npm install -g @fission-ai/openspec@1.9.0
+```
+
+В чате Codex начните изменение с `$openspec-propose "описание изменения"`.
+Для реализации используйте `$openspec-apply-change`, для архивации завершённого
+изменения — `$openspec-archive-change`.
+
+Проверка спецификаций и изменений из корня проекта:
+
+```sh
+openspec validate --all --strict
+```
+
+Документация: [OpenSpec](https://openspec.dev/docs/quickstart).
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

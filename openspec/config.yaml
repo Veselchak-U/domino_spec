@@ -1,0 +1,42 @@
+schema: spec-driven
+
+context: |
+  Проект: domino_analyzer.
+  Стек: Flutter и Dart; единственная целевая платформа — веб.
+  Исходный код находится в lib/, тесты — в test/, веб-оболочка — в web/.
+  Зависимости управляются через pubspec.yaml и flutter pub.
+  Проверка кода: flutter analyze. Тесты: flutter test.
+  Сборка веб-приложения: flutter build web.
+  Отвечай пользователю и пиши описания артефактов на русском языке.
+  Сохраняй обязательные заголовки и ключевые слова формата OpenSpec.
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
