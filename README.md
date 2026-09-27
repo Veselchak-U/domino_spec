@@ -1,6 +1,6 @@
-# domino_analyzer
+# domino_spec
 
-A new Flutter project.
+Используемые правила для игры в Домино "Козёл".
 
 ## OpenSpec
 
