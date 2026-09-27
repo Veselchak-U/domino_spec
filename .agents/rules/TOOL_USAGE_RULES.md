@@ -5,9 +5,9 @@
 Для текстового поиска и списка файлов используй ripgrep:
 
 ```sh
-rg --files lib test
-rg -n 'class |enum |typedef ' lib
-rg -n 'MyApp' lib test
+rg --files docs openspec
+rg -n 'Requirement:|Scenario:' openspec
+rg -n 'round_score|total_score' docs
 rg --files --hidden .agents tools
 ```
 

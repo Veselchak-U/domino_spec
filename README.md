@@ -26,15 +26,31 @@ openspec validate --all --strict
 
 Документация: [OpenSpec](https://openspec.dev/docs/quickstart).
 
-## Getting Started
+## Материалы
 
-This project is a starting point for a Flutter application.
+- [Правила агентов](AGENTS.md).
+- [План правил игры](openspec/changes/add-kozel-fish-variants/specs/kozel-rules/spec.md).
+- [Исследование источников](docs/research/kozel-fish-eggs-sources.md).
+- [Описание JSON-формата](docs/formats/README.md),
+  [схема](docs/formats/kozel-game.schema.json) и
+  [пример завершённой партии](docs/formats/kozel-game.example.json).
 
-A few resources to get you started if this is your first Flutter project:
+Репозиторий содержит спецификации и документацию; кода приложения и выбранного
+стека реализации нет. Основные спецификации ещё не опубликованы в
+`openspec/specs/`: правила находятся в активном плане и архиве планирования.
+Исторические архивные документы могут описывать прежнее состояние проекта.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Скрипты для агентов в `tools/` и Git-настройки сохранены. Проверка материалов:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```sh
+bash tools/ai/run_openspec_validation.sh
+```
+
+## Открытие в Android Studio
+
+Выберите **File → Open** и каталог `domino_spec`. Для открытия добавлены только
+`domino_spec.iml` и `.idea/modules.xml`: они описывают модуль с корнем репозитория.
+Код приложения, SDK и сборка для работы с документацией не требуются.
+Личные настройки IDE и её кэши остаются исключёнными из Git.
+
+Описание формата проекта: [документация JetBrains](https://www.jetbrains.com/help/idea/creating-and-managing-projects.html).

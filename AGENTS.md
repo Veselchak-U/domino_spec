@@ -22,23 +22,16 @@
 
 ## Текущее состояние
 
-Это Flutter-приложение только для веб. Точка входа — [lib/main.dart](lib/main.dart).
-Версия приложения, ограничение Dart SDK и подключённые пакеты указаны в
-[pubspec.yaml](pubspec.yaml); правила анализатора — в
-[analysis_options.yaml](analysis_options.yaml).
-
-Сейчас в проекте стандартное демонстрационное приложение. Не считай
-запланированные модули, сервисы или библиотеки уже существующими.
+Это репозиторий правил игры «Козёл», спецификаций и документации с JSON-примерами.
+Кода приложения, тестового набора и выбранного стека реализации нет.
+Не считай запланированные модули, сервисы или библиотеки уже существующими.
 
 ## Навигация
 
-- [Исходный код](lib/) и [тесты](test/).
-- [Веб-оболочка](web/).
+- [Документация и примеры](docs/).
+- [Формат журнала партии](docs/formats/README.md).
 - [Конфигурация OpenSpec](openspec/config.yaml).
 - [Правила работы с OpenSpec](.agents/rules/OPENSPEC_RULES.md).
-- [Правила написания кода](.agents/rules/CODE_WRITING_RULES.md).
-- [Правила ревью](.agents/rules/REVIEW_RULES.md).
-- [Правила тестирования](.agents/rules/UNIT_TEST_RULES.md).
 - [Поиск по проекту](.agents/rules/TOOL_USAGE_RULES.md).
 - [Структура коммитов](.agents/rules/COMMIT_STRUCTURE_RULES.md).
 
@@ -63,26 +56,21 @@
 - [Синхронизация спецификаций](.agents/skills/openspec-sync-specs/SKILL.md).
 - [Архивирование](.agents/skills/openspec-archive-change/SKILL.md).
 
-## Команды разработки
+## Проверка материалов
 
 Запускай из корня проекта:
 
 ```sh
-flutter pub get
-flutter analyze
-flutter test
-flutter run -d chrome
-flutter build web
+openspec validate --all --strict --no-interactive
 ```
 
 Bash-скрипты запускаются в Bash; на Windows можно использовать Git Bash.
 Они сами переходят в корень проекта:
 
 ```sh
-bash tools/tests/run_unit_tests.sh
 bash tools/ai/run_openspec_validation.sh
 ```
 
-Скрипт тестов запускает стандартный набор Flutter, включая widget-тесты;
-отдельного набора только unit-тестов пока нет. Установка OpenSpec описана в
+Тестов приложения в этом репозитории нет. JSON-примеры дополнительно проверяй
+по схеме и воспроизведением правил. Установка OpenSpec описана в
 [README.md](README.md). Скрипты OpenSpec требуют установленный CLI и ripgrep.
