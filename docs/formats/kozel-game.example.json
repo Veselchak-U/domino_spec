@@ -1,6 +1,7 @@
 {
   "format": "kozel-game-v1",
   "fishVariant": "withEggs",
+  "scoreLimit": 101,
   "teams": [
     {"id": "north", "name": "Север", "players": [{"name": "Анна", "seat": 1}, {"name": "Иван", "seat": 3}]},
     {"id": "south", "name": "Юг", "players": [{"name": "Борис", "seat": 2}, {"name": "Дарья", "seat": 4}]}

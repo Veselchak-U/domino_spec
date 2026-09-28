@@ -13,6 +13,11 @@
         "withoutEggs"
       ]
     },
+    "scoreLimit": {
+      "type": "integer",
+      "enum": [101, 50],
+      "description": "Выбранный при создании партии лимит записанных штрафных очков; не меняется между конами."
+    },
     "teams": {
       "type": "array",
       "items": {
@@ -60,6 +65,7 @@
   "required": [
     "format",
     "fishVariant",
+    "scoreLimit",
     "teams",
     "rounds",
     "result"
