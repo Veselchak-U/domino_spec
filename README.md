@@ -33,7 +33,8 @@ openspec validate --all --strict
 - [Исследование источников](docs/research/kozel-fish-eggs-sources.md).
 - [Описание JSON-формата](docs/formats/README.md),
   [схема](docs/formats/kozel-game.schema.json) и
-  [пример завершённой партии](docs/formats/kozel-game.example.json).
+  [пример завершённой партии](docs/formats/kozel-game.example.json) и
+  [пример незавершённой партии](docs/formats/kozel-game.example_incomplete.json).
 
 Репозиторий содержит спецификации и документацию; кода приложения и выбранного
 стека реализации нет. Основные спецификации ещё не опубликованы в
